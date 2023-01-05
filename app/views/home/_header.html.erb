@@ -9,12 +9,18 @@
     <ul class="navbar-nav mr-auto">
      
       <li class="nav-item">
-      	<% link_to "About Us",home_about_path, class: "nav-link" %>
-        <a class="nav-link" href="#">About Us</a>
+      	<%= link_to 'Friends you hate',home_about_path, class: "navbar-brand"  %>
       </li>
-  
-      
-    </ul>
+
+      <li class="nav-item">
+        <%= link_to 'Show Hate Friends',friends_path, class: "navbar-brand"  %>
+      </li>
+
+      <li class="nav-item">
+        <%= link_to 'New Hate Friend',new_friend_path, class: "navbar-brand"  %>
+      </li>
+
+</ul>
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
