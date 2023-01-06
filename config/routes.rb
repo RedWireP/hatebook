@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
-  resources :friends
+  resources :friends, :new
   #get 'home/index'
   get 'home/about'
-  get 'friends/new'
   root 'home#index'
 end
