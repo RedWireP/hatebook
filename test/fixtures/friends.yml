@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  you: MyString
+  hate: MyString
+  frist_name: MyString
+  last_name: MyString
+  wyjasniam_bo: MyString
+  dlaczego_nienawidzisz: MyString
+
+two:
+  you: MyString
+  hate: MyString
+  frist_name: MyString
+  last_name: MyString
+  wyjasniam_bo: MyString
+  dlaczego_nienawidzisz: MyString

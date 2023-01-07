@@ -2,10 +2,11 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  host: eec2-3-225-213-67.compute-1.amazonaws.com
-  database: d9iavnarfr20nt
-  username: jxavxmspvseaio
-  password: 363104bb1a87daec27564ad9bb650267fb13d1dc809fc77c34b8fec3a69401bb
+  host: ec2-44-194-92-192.compute-1.amazonaws.com
+  database: d854tvbhurfqk4
+  username: jjudqsadipwtvcg
+  password: 889c750dbb43902209ac51fea15089222bbdd1caef300a2cf4e37e5e20286afa
+
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
 development:
@@ -13,10 +14,10 @@ development:
   database: db/development.sqlite3
   adapter: postgresql
   encoding: unicode
-  host: eec2-3-225-213-67.compute-1.amazonaws.com
-  database: d9iavnarfr20nt
-  username: jxavxmspvseaio
-  password: 363104bb1a87daec27564ad9bb650267fb13d1dc809fc77c34b8fec3a69401bb
+  host: ec2-44-194-92-192.compute-1.amazonaws.com
+  database: d854tvbhurfqk4
+  username: judqsadipwtvcg
+  password: 889c750dbb43902209ac51fea15089222bbdd1caef300a2cf4e37e5e20286afa
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
 # Warning: The database defined as "test" will be erased and
