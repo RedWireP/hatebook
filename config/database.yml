@@ -2,22 +2,44 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  host: ec2-34-207-12-160.compute-1.amazonaws.com
-  database: d1038h1tb16486
-  username: uyhdvohcmfpfhv
-  password: d6350b207ea197e87a2a3a2bcbeb566f2d2c71e635d24f6e6d4d50c431c13fe6
+  host: eec2-3-225-213-67.compute-1.amazonaws.com
+  database: d9iavnarfr20nt
+  username: jxavxmspvseaio
+  password: 363104bb1a87daec27564ad9bb650267fb13d1dc809fc77c34b8fec3a69401bb
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
 development:
   <<: *default
   database: db/development.sqlite3
+  adapter: postgresql
+  encoding: unicode
+  host: eec2-3-225-213-67.compute-1.amazonaws.com
+  database: d9iavnarfr20nt
+  username: jxavxmspvseaio
+  password: 363104bb1a87daec27564ad9bb650267fb13d1dc809fc77c34b8fec3a69401bb
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: db/test.sqlite3
+  database: db/test.
+  adapter: postgresql
+  encoding: unicode
+  host: eec2-3-225-213-67.compute-1.amazonaws.com
+  database: d9iavnarfr20nt
+  username: jxavxmspvseaio
+  password: 363104bb1a87daec27564ad9bb650267fb13d1dc809fc77c34b8fec3a69401bb
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
 production:
   <<: *default
-  database: db/production.sqlite3
+  database: db/production.
+  adapter: postgresql
+  encoding: unicode
+  host: eec2-3-225-213-67.compute-1.amazonaws.com
+  database: d9iavnarfr20nt
+  username: jxavxmspvseaio
+  password: 363104bb1a87daec27564ad9bb650267fb13d1dc809fc77c34b8fec3a69401bb
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
